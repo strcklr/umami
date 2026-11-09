@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "services": {
-    "app": {
+    "umami": {
       "root": ".",
       "framework": "nextjs",
       "installCommand": "npx --yes pnpm@12.3.4 install --frozen-lockfile"
@@ -10,7 +10,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": { "service": "app" }
+      "destination": { "service": "umami" }
     }
   ]
 }
